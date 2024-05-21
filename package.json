@@ -1,0 +1,35 @@
+{
+  "name": "wujie-app-template",
+  "version": "1.0.0",
+  "description": "使用wujie微前端框架，搭建基于vue2/vue3/react为主应用的模板",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run start --parallel --no-cache",
+    "build": "turbo run build --filter=\"wujie-*\" --filter=wujie",
+    "clean": "rimraf node_modules **/*/node_modules",
+    "test": "turbo run test",
+    "lint": "turbo run lint --filter wujie",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "wujie",
+    "无界",
+    "vue2",
+    "vue3",
+    "react",
+    "pnpm",
+    "monorepo",
+    "turborepo",
+    "microfrontend",
+    "微前端"
+  ],
+  "author": "liangsanshi",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "husky": "^9.0.11",
+    "rimraf": "^5.0.7",
+    "turbo": "^1.13.3"
+  }
+}
