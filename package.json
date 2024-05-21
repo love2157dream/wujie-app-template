@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "使用wujie微前端框架，搭建基于vue2/vue3/react为主应用的模板",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "turbo run start --parallel --no-cache",
     "build": "turbo run build --filter=\"wujie-*\" --filter=wujie",
