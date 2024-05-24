@@ -5,9 +5,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "turbo run start --parallel --no-cache",
+    "dev": "turbo run dev --parallel --no-cache",
     "build": "turbo run build --filter=\"wujie-*\" --filter=wujie",
-    "clean": "rimraf node_modules **/*/node_modules",
+    "clean": "turbo run clean",
     "test": "turbo run test",
     "lint": "turbo run lint --filter wujie",
     "prepare": "husky"
